@@ -1,0 +1,29 @@
+import java.io.*;
+class ascii
+{
+    public static void main(String[] args)
+    {
+    String str="madam";
+        int count=0;
+        for(char i:str.toCharArray())
+        {
+            count++;
+        }
+    System.out.println("The string length is "+str);
+    int upper=0;
+    for(int i=0;i<count;i++)
+    {
+       char ch=str.charAt(i);
+       if(ch>='A'&&ch<='Z')
+       {
+           upper++;
+       }
+       System.out.print((char)(str.charAt(i)-32));
+    }
+    System.out.println();
+    if(upper==count)
+    {
+    System.out.println("Its a upper case string input");
+    }
+   }
+}
